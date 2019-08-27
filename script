@@ -2,10 +2,10 @@
 set -e
 set -x
 
-cd "$1"
+dir="$1"
 
-echo $(tty) > ~/my/bin/temp_for_gdb
-echo $$ > ~/my/bin/pid_of_gterm
+echo $(tty) > $1/temp_for_gdb
+echo $$ > $1/pid_of_gterm
 
 (
 stty isig brkint susp ''
