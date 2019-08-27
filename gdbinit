@@ -1,3 +1,4 @@
+tui enable
 set confirm off
 # set pagination off
 # set verbose on
